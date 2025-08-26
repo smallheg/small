@@ -27,16 +27,14 @@
 	</head>
 	<body>
 	<script>
-        var now = new Date();
-        var day = String(now.getDate()).padStart(2, '0');
-        var month = String(now.getMonth() + 1).padStart(2, '0');
-        var year = now.getFullYear();
-        var hours = String(now.getHours()).padStart(2, '0');
-        var minutes = String(now.getMinutes()).padStart(2, '0');
-
-        var formattedDateTime = `${year}`;
-
-        document.getElementById("current-datetime").textContent = formattedDateTime;
+       document.getElementById('dateField').valueAsDate = new Date();
+	function formatDate() {
+ 	 let date = new Date();
+  	let day = String(date.getDate()).padStart(2, '0');
+ 	 let month = String(date.getMonth() + 1).padStart(2, '0');
+ 	 let year = date.getFullYear();
+ 	 return `${year}}`;
+	}
     </script>
 		<header>
 	<div id="log">
@@ -73,7 +71,7 @@
 					<p align="center"> обработака </p></b><br><br>
 					</a>
 			
-					<a href="/ogns.php"><b><br><p  align="center"></p>
+					<a href="ogns.html"><b><br><p  align="center"></p>
 					<p align="center"> Огнезащитные </p>
 					<p align="center"> составы и пропитки</p>
 					<p align="center"> для древесины</p></b><br><br>
@@ -92,7 +90,7 @@
 					<div class= "cont">
 						<br>
 						<h2 style="color:#0BFF03" align="center">Скидка на обработку конструкций из древесины до 1.12.17г</h2><br>
-						<IMG class="displayed" src="/img/21.png" >
+						<IMG class="displayed" src="img/21.png" >
 					</div>
  -->
 				<br>
@@ -100,7 +98,7 @@
 				<p align="justify">Основной вид деятельности - проведение работ по огнезащитной обработке строительных конструкций и изделий.
 				Лицензия  № 02300/3034 МЧС РБ на право осуществления деятельности по обеспечению пожарной безопасности. </p><br>
 					<div class="mig">
-						<img src="/img/kons.jpg" width="300" height="300" align="right" alt="огнезащитная обработка">
+						<img src="img/kons.jpg" width="300" height="300" align="right" alt="огнезащитная обработка">
 					</div>
 				<p align="justify">Мы являемся дилером компании GOODHIM — разработчика и производителя 
 				уникальных огнебиозащитных составов и антисептических средств, за счет чего мы можем предложить самые выгодные цены на 
@@ -123,23 +121,23 @@
 			<div class= "container">
 	<h3 align="center">Наши сертификаты</h3></br></br>
 	<div class= "cols">
-		<a class="photo" rel="group" title="Лицензия, лист 1" href="/img/Page2.jpg" data-fancybox="gallery">
+		<a class="photo" rel="group" title="Лицензия, лист 1" href="img/Page2.jpg" data-fancybox="gallery">
 			<img src="img/Page22.jpg" width="100" height="80"/>
 		</a>
 	</div>	
 	<div class= "cols">
-		<a class="photo" rel="group" title="Лицензия, лист 2" href="/img/Page3.jpg" data-fancybox="gallery">
+		<a class="photo" rel="group" title="Лицензия, лист 2" href="img/Page3.jpg" data-fancybox="gallery">
 			<img src="img/Page33.jpg" width="100" height="80"/>
 		</a>
 	</div>	
 	
 	<div class= "cols">
-		<a class="photo" rel="group" title="Свидетельство" href="/img/Page4.jpg" data-fancybox="gallery">
+		<a class="photo" rel="group" title="Свидетельство" href="img/Page4.jpg" data-fancybox="gallery">
 			<img src="img/Page44.jpg" width="100" height="80"/>
 		</a>
 	</div>	
 	<div class= "cols">
-		<a class="photo" rel="group" title="Сертификат соответствия МИГ-09" href="/img/Page1.jpg" data-fancybox="gallery">
+		<a class="photo" rel="group" title="Сертификат соответствия МИГ-09" href="img/Page1.jpg" data-fancybox="gallery">
 			<img src="img/Page11.jpg" width="100" height="80"/>
 		</a>
 	</div>	
