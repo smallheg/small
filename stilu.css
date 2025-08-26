@@ -629,8 +629,9 @@ a.mylink{
 	min-width: 20.8em;
 	position: relative;
 	float: left;
+	border-radius: 1em;
 	border-color: #c6e3ff;
-	background-color: #454343;
+	background-color: #2a282894;
 }
 
 	/* кнопки выбора*/
