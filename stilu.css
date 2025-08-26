@@ -583,6 +583,7 @@ a.mylink{
 	height: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	align-items: flex-end;
 }
 .d-calc-result input {
 	background: transparent;
