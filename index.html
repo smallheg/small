@@ -142,7 +142,20 @@
 		</a>
 	</div>	
 </div>
+		
+		 <p>Сегодняшняя дата и время: <span id="current-datetime"></span></p>
+<script>
+        var now = new Date();
+        var day = String(now.getDate()).padStart(2, '0');
+        var month = String(now.getMonth() + 1).padStart(2, '0');
+        var year = now.getFullYear();
+        var hours = String(now.getHours()).padStart(2, '0');
+        var minutes = String(now.getMinutes()).padStart(2, '0');
 
+        var formattedDateTime = `${year}`;
+
+        document.getElementById("current-datetime").textContent = formattedDateTime;
+    </script>
 		<footer>
 		<div id="nomer">
 		 Тел:+375(29)-1268983; Email: ip_garcuev@mail.ru
