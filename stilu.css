@@ -24,7 +24,7 @@ body{
 	font-family: "Segoe UI", Arial, sans-serif;
 	font-size: 1em;
 	line-height: 135%;
-	background-image: url(/img/fon.jpg);
+	background-image: url(img/fon.jpg);
 	background-position: center;
 }
 p {
