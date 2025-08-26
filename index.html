@@ -151,7 +151,14 @@
 		 <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter"></div>
 		</div>
 		 <div id="prava">
-		  Все права защищены &copy;<input id="current-datetime">
+		  Все права защищены &copy; <p><span id="current-datetime"></span></p>
+<script>
+        var now = new Date();
+        var year = now.getFullYear();
+        var formattedDateTime = `${year}`;
+
+        document.getElementById("current-datetime").textContent = formattedDateTime;
+    </script>
 		 </div>
 
 		</footer>
