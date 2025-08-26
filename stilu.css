@@ -621,10 +621,11 @@ a.mylink{
 }
 .message-box-wrap {
 	border: 0px solid #fff;
-	padding: 10px;
+	padding: 0.2em;
 }
 .one_half {
 	width: 49%;
+	min-width: 20.8em;
 	position: relative;
 	float: left;
 	border-color: #c6e3ff;
