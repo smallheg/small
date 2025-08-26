@@ -1,0 +1,669 @@
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {height: 100%}
+
+img{
+	max-width:100%;
+	height:auto;
+	width:auto\9;
+	margin:0 2em 0;
+}
+
+body{
+	position:relative; 
+	width: 100%;
+	min-height: 100%;
+	float: left;
+	background-color: #F5F2E9;
+	color: #333;
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-size: 1em;
+	line-height: 135%;
+	background-image: url(/img/fon.jpg);
+	background-position: center;
+}
+p {
+    text-indent: 20px /* Отступ первой строки в пикселах */
+   }
+   
+p img {
+  display: block; /* на блочный элемент не действует text-indent */
+}
+    
+p.bezot {
+    text-indent: 0; /* без отступа строки в пикселах */
+   }
+   
+a {
+	color:#141413;
+	text-decoration: none;
+}
+a:hover {
+	color:#18CEF2;
+	font-size: 0.98em;
+}
+a, a:hover {
+	-webkit-transition:all.2s ease;
+	-moz-transition:all.2s ease;
+	transition:all.2s ease;
+}
+clear {
+	clear: both;
+}
+
+header{	
+	width: 100%;
+	min-width: 65em;
+	float: left;
+	padding: 1%;
+	padding-bottom:0.2%;
+	padding-top: 0.8%;
+	background: linear-gradient(to top, #fefcea, #f1da36);
+	border-bottom: 2px solid silver;
+	margin-bottom: 10px;
+}
+header #log{
+	width:20%;
+	float: left;
+	color: #0c0d0c;
+	font-size: 1.6em;
+	font-family: Times New Roman, sans-serif;
+}
+	.log{
+		float:left;
+		margin: 0 0 0 0.9em;
+	}
+header #log #nom{
+	font-size: 0.5em;
+	margin-top:0.2em;
+	margin-left:5em;
+}
+header #log span{
+	color: #C90E37;
+}
+header #glav{
+	margin-top:0.5em;
+	font-size: 1.1em;
+	width:20%;
+	float: left;
+	text-align: center;
+}
+header #uslug{
+	margin-top:0.5em;
+	font-size: 1.1em;
+	width:20%;
+	float: left;
+	text-align: center;
+}
+header #galer{
+	margin-top:0.5em;
+	font-size: 1.1em;
+	width:20%;
+	float: left;
+	text-align: center;
+}
+header #contact{
+	margin-top:0.5em;
+	font-size: 1.1em;
+	width:20%;
+	float: left;
+	text-align: center;
+}
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	min-width: 65em;
+	float: left;
+	padding: 1%;
+	background: linear-gradient(to bottom, #fefcea, #f1da36);
+	border-top: 2px solid silver;
+	margin-top: 20px;
+}
+footer #prava{
+	float: right;
+	width: 33%;
+	text-align: right;
+	font-size: 0.9em;
+}
+
+footer #social{
+	float: left;
+	width: 19%;
+	text-align:left;
+	font-size: 0.9em;
+}
+
+footer #nomer{
+	float: left;
+	width: 46%;
+	text-align:left;
+	font-size: 0.9em;
+}
+#wrapper{
+	height: 100%;
+	width: 90%;
+	min-width: 56em;
+	margin-left: 5%;
+	float: left;
+}
+.grad{
+	background: linear-gradient(to top, #fefcea, #f1da36);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}/*Градиент для текста*/
+
+#wrapper #leftcol {
+	width: 20%;	
+	margin-right: 5%;
+	float: left;
+	color: #F5F5EB;
+}
+#wrapper #leftcol a {
+	color:#F8ED9E;
+	text-decoration: none;
+}
+#wrapper #leftcol a:hover {
+	color:#18CEF2;
+	font-size: 0.98em;
+}
+/*Стили обратной связи
+#wrapper #rightcol input{
+	width: 40%;
+	margin-left: 30%;
+	float: left;
+	border-radius: 5px;
+	border: 2px solid silver;
+	padding: 5px;
+	color: #5B5C3D;
+	margin-bottom: 10px;
+	font-size:1em;
+}
+#wrapper #rightcol textarea{
+	width: 50%;
+	height: 180px;
+	margin-left: 25%;
+	float: left;
+	border-radius: 5px;
+	border: 2px solid silver;
+	padding: 5px;
+	color: #5B5C3D;
+	margin-bottom: 10px;
+	font-size:1.2em;
+	resize: none;
+}
+#wrapper #rightcol input:hover ,#wrapper #rightcol textarea:hover{
+	border: 2px solid #034F80;
+	}*/
+	
+#wrapper #rightcol{
+	width: 75%;
+	color: #F5F5EB;
+	float: left;
+}
+
+	#wrapper #rightcol a {		
+		color:#F8ED9E;
+		text-decoration: none;
+	}
+	#wrapper #rightcol a:hover {
+		color:#18CEF2;
+		font-size: 0.98em;
+	}
+
+	#wrapper #rightcol #der{
+		float: left;
+		width: 20%;
+		text-align:left;
+		font-size: 0.9em;
+	}
+	
+	#wrapper #rightcol #met{
+		float: left;
+		width: 20%;
+		text-align:left;
+		font-size: 0.9em;
+	}
+	
+	#wrapper #rightcol #tkan{
+		float: left;
+		width: 20%;
+		text-align:left;
+		font-size: 0.9em;
+	}
+	
+	#wrapper #rightcol #beton{
+		float: left;
+		width: 20%;
+		text-align:left;
+		font-size: 0.9em;
+	}
+	
+	#wrapper #rightcol #konst{
+		float: left;
+		width: 20%;
+		text-align:left;
+		font-size: 0.9em;
+	}
+	
+/*Описание пропиток	
+	#wrapper #rightcol #og{
+		float: left;
+		width: 33%;
+		text-align:left;
+		font-size: 0.9em;
+	}
+	
+	#wrapper #rightcol #an{
+		float: left;
+		width: 34%;
+		text-align:left;
+		font-size: 0.9em;
+	}
+	
+	#wrapper #rightcol #zd{
+		float: left;
+		width: 33%;
+		text-align:left;
+		font-size: 0.9em;
+	}*/
+
+#wrapper #rightcol #messageShow{
+	font-size:1.2em;
+	float: left;
+	color:#EA270E;
+	width: 100%;
+	text-align:center;
+}
+/*Класс для всех кнопок*/
+.knop {
+	color: #0D0E0F ;
+	background: #66EB31;
+	cursor: pointer;
+}
+.knop: hover {
+	color: #0D0E0F;
+	background: #41C90A ;
+}
+/*Cетка бокс под сертефикаты*/
+.container {
+	color: #F5F9FA;
+	clear: left;
+	width: 100%;
+	padding: 1% 2% 1%;
+	margin: 0 0 5em;
+}
+.container .cols {
+	width: 25%;
+	float: left;
+	margin: 0 0 5em;
+	padding: 0 1em;
+	text-align: center;
+}
+
+.cont {
+	color: #F5F9FA;
+	clear: left;
+	width: 100%;
+	padding: 1% 2% 1%;
+	margin: 0 0 0;
+	}
+/*Cетка бокс под картинку с описанием*/
+.conter img {
+ margin: 0 0 0;
+}
+
+.conter {
+	color: #F5F9FA;
+	clear: left;
+	width: 100%;
+	padding: 1% 0 1%;
+	margin: 0 1em 0;
+	min-height: 13em;/*минимальная высота блока*/
+}
+
+.conter .imgi {
+	width: 23%;
+	float: left;
+	text-align: center;
+	border:3px solid #ccd498;
+	border-radius: 0.5em;
+}	
+.conter .text {
+	width: 75%;
+	float: right;
+	margin: 0 0 0em;
+	padding: 0 1em;
+	text-align: center;
+}
+
+.conterr img {
+ margin: 0 0 0;
+}
+
+.conterr {
+	color: #F5F9FA;
+	clear: right;
+	width: 100%;
+	padding: 1% 0 1%;
+	margin: 0 1em 0;
+	min-height: 13em;/*минимальная высота блока*/
+}
+
+
+.conterr .imgi {
+	width: 23%;
+	float: left;
+	text-align: center;
+	border:3px solid #ccd498;
+	border-radius: 0.5em;
+}	
+.conterr .text {
+	width: 75%;
+	float: right;
+	margin: 0 0 0em;
+	padding: 0 1em;
+	text-align: center;
+}
+
+
+/*Cтили материалов*/
+.material {
+	margin-bottom: 3em;
+	clear: left;
+	color: #F5F9FA;
+	height: 100%;
+	width: 90%;
+	margin-left: 5%;
+	float: left;
+}
+/*стили галереи*/
+.gallery img{
+	margin: 5px;
+	border: 3px solid #F4F5E6;
+}
+a.photo:hover img{
+	border:3px solid #ccd498;
+}
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+	.miga{
+		text-align: center;
+	}
+	.mig{
+	
+	}
+	
+/*стили модального окна*/
+a.mylink img {
+ margin: 0 0 0;
+}
+a.mylink:hover img {
+ opacity: .8;
+}
+a.mylink:hover {
+	text-align: center;
+	color:#18f23d;
+	font-size: 1em;
+}
+#wrapper #rightcol a.mylink:hover {
+	color:#18f23d;
+	font-size: 1em;
+}
+a.mylink{
+	text-align: center;
+	float: left;
+	width: 24%;
+	border:3px solid #ccd498;
+	border-radius: 0.5em;
+	margin: -2em 0.2em 3em;/*отступ между блоками и снизу*/
+	min-height: 17em;/*минимальная высота блока*/
+}
+.linktexst{
+	float: left;
+	width: 100%;
+}
+
+/*bottom мой прокт;*/
+.my-project-open-btn {
+  position: fixed;
+  z-index: 999;
+  bottom: 25px;
+  right: 10px;
+  background: #293280;
+  cursor: pointer;
+  border-radius: 3px;
+  border-bottom: 1px solid #909090;
+}
+
+.my-project-open-btn {}
+.my-project-open-btn a {
+	display: inline-block;
+	padding: 10px 40px;
+	color: #fff;
+}
+.my-project-open-btn:hover {
+	background-color: #777;
+
+}
+.my-project-open-btn:hover a {
+	color: #fff;
+}
+.my-project-open-btn span {
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  background: #fff;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  color: #293280;
+  font-family: Trebuchet MS;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-project {
+	display: none;
+	padding: 30px 20px;
+
+	max-height: 90vh;
+	overflow-y: auto;
+}
+.my-project-tbl {
+	border-collapse: collapse;
+	padding: 5px;
+}
+.my-project-tbl tr {
+	background: #f5f5f5;
+	border-bottom: 2px solid #fff;
+	transition: 0.25s all;
+}
+.my-project-tbl tr:first-child {
+	font-weight: bold;
+}
+.my-project-tbl tr td:first-child {
+	width: 35px;
+}
+.my-project-tbl tr td:first-child img {
+	max-width: none;
+}
+.my-project-tbl tr td {
+	padding: 5px;
+	text-align: center;
+	vertical-align: middle;
+	border-right: 2px solid #fff;
+}
+.my-project-tbl tr:first-child td {
+	/*vertical-align: bottom;*/
+}
+.my-project-tbl tr:not(:last-child):not(:first-child):hover {
+	background: #fff;
+}
+.my-project-tbl .red-row {
+	background: #ffa4a4 !important;
+}
+.my-project-row-delete,
+.my-project-delete-all,
+#my-project-export-csv,
+#my-project-print {
+	cursor: pointer;
+}
+.rashod-total-kg-all {
+	font-weight: bold;
+}
+.my-project-footer {
+	margin-top: 40px;
+	text-align: right;
+}
+.my-project-tbl-print tr {
+	background: #fff;
+	border: 2px solid #000;
+}
+#my-project-print {
+	display: inline-block;
+	margin: 20px 0;
+}
+.my-project-print-wrap {
+	padding: 40px;
+	text-align: center;
+}
+.d-calc-no-bold {
+	font-weight: normal;
+	font-size: 90%;
+}
+.ui-effects-transfer {
+	border: 2px dotted black;
+}
+
+.d-calc-wrap {  
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+	/* columns */
+.d-calc-product {
+	margin: 0 0 10px 0 !important;
+	padding-top: 20px !important;
+	display: inline-block;
+	width: 100%
+}
+.d-calc-product input {
+	border:none;
+	padding:10px 5px;
+	margin:10px auto;
+	width:100%;
+}
+.d-calc-product label {
+	text-align: center;
+	font-weight: normal;
+}
+.d-calc-product input[type="radio"] {
+	width: auto;
+	text-align: center;
+}
+
+.d-calc-result {
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.d-calc-result input {
+	background: transparent;
+	font-weight: bold;
+	font-size: 120%;
+	color: #fcfa7c;
+	border-bottom: 1px solid #bbb;
+	/*margin: 5px 0 15px 0;*/
+	padding: 0 5px;
+}
+.d-calc-result label {
+	text-align: right;
+	display: block;
+	margin-top: 15px;
+}
+
+.col-md-6 {
+        width: 50%;
+		float: left;
+		position:relative;
+		min-height:1px;
+		padding-right:10px;
+		padding-left:10px
+    }
+.col-md-12 {
+        width: 100%;
+		float: left;
+		position:relative;
+		min-height:1px;
+		padding-right:10px;
+		padding-left:10px
+    }
+.d-calc-ttl {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.message-box-wrap {
+	border: 0px solid #fff;
+	padding: 10px;
+}
+.one_half {
+	width: 49%;
+	position: relative;
+	float: left;
+	border-color: #c6e3ff;
+	background-color: #454343;
+}
+
+	/* кнопки выбора*/
+.d-radio-calc .checkmark {
+  height: 18px;
+  width: 18px;
+  top: 2.5px;
+  background-color: #fff;
+  transition: 0.1s;
+}
+.d-radio:not(.d-radio-disabled):hover {
+	color: #1efaef;
+}
+#clear-project{
+	cursor: pointer;
+		width: 49%;	
+		float: left;
+	/*font-size: 90%;*/
+}
+#add-to-project-btn {
+	cursor: pointer;
+	border: none;
+	padding: 10px 30px;
+	border-radius: 10px;
+	background: #293280;
+	border-bottom: 1px solid #909090;
+	color: #fff;
+	font-size: inherit;
+	font-family: inherit;
+	width: 49%;	
+	float:left;
+}
+
+#add-to-project-btn:hover {
+	background-color: #777;
+	font-size: 0.98em;
+	-webkit-transition:all.2s ease;
+	-moz-transition:all.2s ease;
+	transition:all.2s ease;}
+	
