@@ -26,41 +26,31 @@
 	
 	</head>
 	<body>
-	<script>
-       document.getElementById('dateField').valueAsDate = new Date();
-	function formatDate() {
- 	 let date = new Date();
-  	let day = String(date.getDate()).padStart(2, '0');
- 	 let month = String(date.getMonth() + 1).padStart(2, '0');
- 	 let year = date.getFullYear();
- 	 return `${year}}`;
-	}
-    </script>
 		<header>
-	<div id="log">
-	
-		<p><img src="img/log.png" width="22" height="100" 
-		alt="огнезащита логотип" align="left" class="log">
-  
-		<span>Ne</span>gari.by
-		<div id="nom">
-		+375(29)-1268983
-		</div>
-		</p>
-	</div>
-	<div id="glav">
-		<a href="/index.php"><b>Главная</b></a>
-	</div>
-	<div id="uslug">
-		<a href="blocks/uslug.php"><b>Цены</b></a>
-	</div>
-	<div id="galer">
-		<a href="blocks/galer.php"><b>Объекты</b></a>
-	</div>
-	<div id="contact">
-		<a href="blocks/contact.php"><b>Контакты</b></a>	
-	</div>
-</header>
+			<div id="log">
+			
+				<p><img src="img/log.png" width="22" height="100" 
+				alt="огнезащита логотип" align="left" class="log">
+		  
+				<span>Ne</span>gari.by
+				<div id="nom">
+				+375(29)-1268983
+				</div>
+				</p>
+			</div>
+			<div id="glav">
+				<a href="/index.php"><b>Главная</b></a>
+			</div>
+			<div id="uslug">
+				<a href="blocks/uslug.php"><b>Цены</b></a>
+			</div>
+			<div id="galer">
+				<a href="blocks/galer.php"><b>Объекты</b></a>
+			</div>
+			<div id="contact">
+				<a href="blocks/contact.php"><b>Контакты</b></a>	
+			</div>
+		</header>
 		
 			<div id= "wrapper">
 			
@@ -143,15 +133,10 @@
 	</div>	
 </div>
 		
-		 <p>Сегодняшняя дата и время: <span id="current-datetime"></span></p>
+		 <p><span id="current-datetime"></span></p>
 <script>
         var now = new Date();
-        var day = String(now.getDate()).padStart(2, '0');
-        var month = String(now.getMonth() + 1).padStart(2, '0');
         var year = now.getFullYear();
-        var hours = String(now.getHours()).padStart(2, '0');
-        var minutes = String(now.getMinutes()).padStart(2, '0');
-
         var formattedDateTime = `${year}`;
 
         document.getElementById("current-datetime").textContent = formattedDateTime;
@@ -166,7 +151,7 @@
 		 <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter"></div>
 		</div>
 		 <div id="prava">
-		  Все права защищены &copy;<input type="date" id="current-datetime">
+		  Все права защищены &copy;<p><span id="current-datetime"></span></p>
 		 </div>
 
 		</footer>
