@@ -124,16 +124,8 @@
 		</a>
 	</div>	
 </div>
-	<script>
-      // Создаем новый объект Date, который по умолчанию содержит текущую дату и время
-      const today = new Date();
-
-      // Получаем четырехзначное представление текущего года с помощью метода getFullYear()
-      const currentYear = today.getFullYear();
-
-      // Находим элемент на странице по его id и устанавливаем его текстовое содержимое равным полученному году
-      document.getElementById('currentYear').textContent = currentYear;
-    </script>
+		<input type="date" id="currentYear">
+	
 	<footer>
 		<div id="nomer">
 		 Тел:+375(29)-1268983; Email: ip_garcuev@mail.ru
@@ -148,6 +140,15 @@
 		 </div>
 
 	</footer>
-		
+	<script>
+      // Создаем новый объект Date, который по умолчанию содержит текущую дату и время
+      const today = new Date();
+
+      // Получаем четырехзначное представление текущего года с помощью метода getFullYear()
+      const currentYear = today.getFullYear();
+
+      // Находим элемент на странице по его id и устанавливаем его текстовое содержимое равным полученному году
+      document.getElementById('currentYear').textContent = currentYear;
+    </script>	
 	</body>
 </html>
