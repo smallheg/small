@@ -125,16 +125,15 @@
 	</div>	
 </div>
 	<script>
-	 const headingElement = document.getElementById('2020'); 
-	 var now = new Date();
-	 var day = String(now.getDate()).padStart(2, '0');
-	 var month = String(now.getMonth() + 1).padStart(2, '0');
-	 var year = now.getFullYear();
-	 var hours = String(now.getHours()).padStart(2, '0');
-	 var minutes = String(now.getMinutes()).padStart(2, '0');
-	 var formattedDateTime = `${year}`;
-	 document.getElementById("headingElement").textContent = formattedDateTime;
-   	</script>
+      // Создаем новый объект Date, который по умолчанию содержит текущую дату и время
+      const today = new Date();
+
+      // Получаем четырехзначное представление текущего года с помощью метода getFullYear()
+      const currentYear = today.getFullYear();
+
+      // Находим элемент на странице по его id и устанавливаем его текстовое содержимое равным полученному году
+      document.getElementById('currentYear').textContent = currentYear;
+    </script>
 	<footer>
 		<div id="nomer">
 		 Тел:+375(29)-1268983; Email: ip_garcuev@mail.ru
@@ -145,7 +144,7 @@
 		 <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter"></div>
 		</div>
 		 <div id="prava">
-		  Все права защищены &copy; <span id="headingElement"></span>
+		  Все права защищены &copy; <span id="currentYear"></span>
 		 </div>
 
 	</footer>
